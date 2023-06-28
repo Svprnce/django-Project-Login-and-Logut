@@ -1,0 +1,9 @@
+{% extends 'authentication/base.html' %}
+{% block content %}
+<H3>
+    Hello {{user}}
+    {% if User.is_authenticated %}
+        <a href="logout">Logout</a>
+    {% endif %}
+</H3>
+{% endblock %}
